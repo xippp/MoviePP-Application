@@ -1,0 +1,6 @@
+framework module Pods_MoviePP_ApplicationTests {
+  umbrella header "Pods-MoviePP-ApplicationTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

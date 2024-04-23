@@ -1,0 +1,6 @@
+framework module Pods_MoviePP_Application {
+  umbrella header "Pods-MoviePP-Application-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchpageViewController" customModule="MoviePP_Application" customModuleProvider="target">
+            <connections>
+                <outlet property="searchFieldView" destination="MOv-A9-hvz" id="3wj-d5-4kI"/>
+                <outlet property="searchTableView" destination="yPc-kv-xmV" id="y60-wQ-ULu"/>
+                <outlet property="view" destination="iN0-l3-epB" id="U92-im-v0O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOv-A9-hvz" customClass="SearchField" customModule="MoviePP_Application" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="79" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Idf-No-9oH"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yPc-kv-xmV">
+                    <rect key="frame" x="0.0" y="159" width="393" height="659"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MOv-A9-hvz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="60P-iZ-sVa"/>
+                <constraint firstItem="MOv-A9-hvz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="BQ1-cu-oay"/>
+                <constraint firstItem="yPc-kv-xmV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Fz0-op-XvC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MOv-A9-hvz" secondAttribute="trailing" id="QlJ-YN-9Uh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yPc-kv-xmV" secondAttribute="trailing" id="cLj-G2-AkH"/>
+                <constraint firstItem="yPc-kv-xmV" firstAttribute="top" secondItem="MOv-A9-hvz" secondAttribute="bottom" constant="30" id="gEa-2P-aIk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yPc-kv-xmV" secondAttribute="bottom" id="qTv-3c-qa5"/>
+            </constraints>
+            <point key="canvasLocation" x="155" y="1"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
