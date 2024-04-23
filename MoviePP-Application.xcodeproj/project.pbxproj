@@ -329,6 +329,13 @@
 			path = SearchMovieTableViewCell;
 			sourceTree = "<group>";
 		};
+		DAB6A4BE2BD7BC9A0059C552 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		DAF0DDD72BC314360056B80F = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +361,7 @@
 		DAF0DDE22BC314370056B80F /* MoviePP-Application */ = {
 			isa = PBXGroup;
 			children = (
+				DAB6A4BE2BD7BC9A0059C552 /* resource */,
 				DAB2B7CA2BC63A070083A6B6 /* Model */,
 				DA1D98392BC3EA3900A6232C /* CollectionViewCell */,
 				DA1D98332BC3E8A100A6232C /* TableViewCell */,
